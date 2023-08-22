@@ -1,0 +1,14 @@
+package clase_7_8_2023;
+
+public class SumaNoOO {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a =5;
+		int b = 10;
+		int suma = 0;
+		suma = a + b;
+		System.out.pritln('la suma de a mas b es ' + suma)
+	}
+
+}

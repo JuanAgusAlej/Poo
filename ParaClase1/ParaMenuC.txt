@@ -1,0 +1,104 @@
+#include <stdio.h>
+#include <stdlib.h>
+void menu();
+void sumar();
+void restar();
+void multiplicar();
+void dividir();
+
+int main()
+{
+   menu();
+   return 0;
+}
+void menu()
+        {
+            unsigned int opc;
+            do
+            {
+                do
+               {
+                    system("CLS");
+
+                    printf("MENU DE OPERACIONES\n");
+                    printf("1 - Sumar\n") ;
+                    printf("2 - Restar\n") ;
+                    printf("3 - Multiplicar\n") ;
+                    printf("4 - Dividir\n") ;
+                    printf("5 - Salir\n")   ;
+                    printf("Ingrese una opcion: ");
+                    scanf("%d",&opc);
+
+                    system("CLS");
+                } while(opc < 1 && opc > 5);
+
+                switch (opc)
+                {
+                    case 1:
+                        sumar();
+                        system("Pause");
+                        break;
+                    case 2:
+                        restar();
+                        system("Pause");
+                        break;
+                    case 3:
+                        multiplicar();
+                        system("Pause");
+                        break;
+                    case 4:
+                        dividir();
+                        system("Pause");
+                        break;
+               }
+
+            }while (opc != 5);
+ }
+
+ void sumar()
+ {
+     int a,b,r;
+     printf("Estoy en Sumar\n");
+     printf("Ingrese un valor entero: ");
+     scanf("%d",&a);
+     printf("Ingrese un valor entero: ");
+     scanf("%d",&b);
+     r=a+b;
+     printf("\nLa suma de a: %d y b: %d El resultado es: %d\n\n", a,b,r);
+ }
+ void restar()
+ {
+     int a,b,r;
+     printf("Estoy en Restar\n");
+     printf("Ingrese un valor entero: ");
+     scanf("%d",&a);
+     printf("Ingrese un valor entero: ");
+     scanf("%d",&b);
+     r=a-b;
+     printf("\nLa resta de a: %d y b: %d El resultado es: %d\n\n", a,b,r);
+ }
+ void multiplicar()
+ {
+     int a,b,r;
+     printf("Estoy en Multiplicar\n");
+     printf("Ingrese un valor entero: ");
+     scanf("%d",&a);
+     printf("Ingrese un valor entero: ");
+     scanf("%d",&b);
+     r=a*b;
+     printf("\nEl Producto de a: %d y b: %d El resultado es: %d\n\n", a,b,r);
+ }
+ void dividir()
+ {
+     int a,b,r;
+     printf("Estoy en Dividir\n");
+     printf("Ingrese un valor entero: ");
+     scanf("%d",&a);
+     printf("Ingrese un valor entero: ");
+     scanf("%d",&b);
+     r=a/b;
+     printf("\nEl Cociente de a: %d y b: %d El resultado es: %d\n\n", a,b,r);
+ }
+
+
+
