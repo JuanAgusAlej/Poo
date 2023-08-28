@@ -1,0 +1,10 @@
+System.out.printf("%s%.2f\n","La distancia entre los puntos\na(100.0,200.0) y b(400.0,800.0) es: ", a.calcularDistancia(b));
+
+
+Formateador	Salida
+%f	Coma flotante decimal de precisión simple (float)
+%lf	Coma flotante decimal de precisión doble (double)
+%ld	Entero de 32 bits (long)
+%lu	Entero sin signo de 32 bits (unsigned long)
+
+java.sun.com/javase/6/docs/api/
